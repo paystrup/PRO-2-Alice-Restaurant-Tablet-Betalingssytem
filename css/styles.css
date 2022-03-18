@@ -1,0 +1,618 @@
+/* PROTOTYPE - ALICES RESTAURANT 
+UDVIKLET TIL STATISK 'PORTRAIT-TABLET' POS SKÆRM
+NATIVE RES: 4k PORTRAIT - 2160 x 3840
+*/
+
+/* CSS RESET + scroll settings */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    line-height: 200%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* IMPORT FONT */
+@font-face {
+    font-family: 'Zona Pro';
+    src: url('fonts/ZonaPro-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'GT America Regular';
+    src: url('fonts/GT-America-Regular.otf') format('opentype');
+}
+
+
+/* FARVE VARIABLER */
+:root{
+    --blue: #0D25FF;
+    --darkblue: #3F3D56;
+}
+
+/*INDEX.HTML - startskærm */
+.weatherInfo{
+    font-size: 2rem;
+    color: white;
+    width: 100%;
+    background-color: black;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 35rem;
+}
+
+marquee{
+    width: 100%;
+    padding-top: 1rem;
+}
+
+#videoBG{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+}
+
+#front-bg{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Zona Pro', sans-serif;
+    font-weight: 800;
+}
+
+.logotop{
+    display: flex;
+    transform: translateY(-50px);
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    padding-top: 5rem;
+    padding-left: 10rem;
+}
+
+.logotop img{
+    height: 6rem;
+}
+
+#front-text-layer{
+    color: white;
+}
+
+.landingcta{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem;
+    background-color: var(--blue);
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+#front-text-layer{
+    margin-top: 46rem;
+    padding-left: 10rem;
+    padding-bottom: 9rem;   
+}
+
+#text-outline{
+    color: black;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: white;
+}
+
+#front-text-layer hr{
+    color: white;
+    border: solid 4px white;
+}
+
+#front-text-layer h1{
+    font-size: 25rem;
+    line-height: 110%;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.landingcta a{
+    font-size: 4.5rem;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: white;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    border-radius: 175px;
+    color: black;
+}
+
+/* BESTILLING.HTML - BESTILLINGSSIDE */
+#bestillingBox{
+    display: flex;
+    gap: 200px;
+    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+#bestil-sidebar{
+    font-family: 'Zona Pro', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    width: 28%;
+    color: rgb(196, 196, 196);
+}
+
+#bestil-cta{
+    font-family: 'Zona Pro', sans-serif;
+    font-weight: 800;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    gap: 3rem;
+    background-color: var(--blue);
+}
+
+.main-button{
+    font-size: 3.5rem;
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: white;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    border-radius: 175px;
+    color: black;
+}
+
+#blue-button{
+    font-size: 3.5rem;
+    text-decoration: none;
+    background-color: var(--blue);
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    border-radius: 175px;
+    color: white;
+}
+
+#second-button{
+    font-size: 3rem;
+    text-decoration: none;
+    border: 10px solid white;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    border-radius: 175px;
+    color: white;
+}
+
+#third-button{
+    font-size: 3rem;
+    text-decoration: none;
+    border: 5px solid black;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    border-radius: 175px;
+    color: black;
+}
+
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+}
+
+.menu-item img{
+    height: 60px;
+    opacity: 0.2;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.menuItemHighlighted{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5rem;
+    color: black;
+    animation: fade 0.7s ease-out;
+}
+
+.menuItemHighlighted img{
+    height: 60px;
+    opacity: 1;
+}
+
+#menuBordID p{
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    border: solid 3px black;
+    margin-bottom: 8rem;
+}
+
+#bill{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5rem;
+}
+
+/* PRODUKTER - INDSÆTTES VIA JS EVENTLISTENER CLICK */
+#produkterHeader h2{
+    font-family: 'Zona Pro', sans-serif;
+    font-size: 6rem;
+    line-height: 100%;
+    padding-bottom: 3rem;
+}
+
+#produkterHeader hr{
+    margin-bottom: 7rem;
+}
+
+.produktContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10rem;
+}
+
+.produktContainer p{
+    font-family: 'GT America Regular', sans-serif;
+    font-size: 2rem;
+}
+
+.produktContainer h3{
+    font-family: 'Zona Pro', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.produktContainer h4{
+    font-family: 'Zona Pro', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.produktContainerText{
+    padding-right: 3rem;
+}
+
+.produktContainerTextHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.produktContainerPic{
+    height: 100%;
+    width: auto;
+    justify-content: flex-end;
+}
+
+.produktContainerPic img{
+    border-radius: 25px;
+    height: 70%;
+}
+
+.produktContainerTextButtons button{
+    background-color: var(--blue);
+    border: none;
+    margin-top: 4rem;
+    text-align: center;
+    padding: 0.75rem 5rem 0.75rem 5rem;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 100px;
+}
+
+#produkterWrap{
+    width: 70%;
+}
+
+#menuSprog{
+    border-radius: 20px;
+    text-align: center;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    margin-bottom: 3rem;
+    color: white;
+    background-color: var(--blue);
+}
+
+.ordersList{
+    font-size: 2rem;
+}
+
+#orders h2{
+    font-size: 3rem;
+}
+
+.orderItem{
+    padding-top: 2rem;
+    font-size: 1rem;
+}
+
+li{
+    list-style-type: none;
+}
+
+.orderItem button{
+    text-align: center;
+    font-family: 'Zona Pro', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(201, 201, 201);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 2rem;
+    color: black;
+
+}
+
+/* BESTILLINGSSIDE.HTML */
+#ordreBekræftContainer{
+    font-family: 'Zona Pro', sans-serif;
+    font-weight: 800;
+}
+
+.progbar{
+    display: flex;
+    justify-content: center;
+    padding-top: 7rem;
+}
+
+.progbar img{
+    width: 30%;
+    height: auto;
+}
+
+#visOrdre{
+    font-size: 3rem;
+    min-width: 1500px;
+    min-height: 1000px;
+    border: 3px solid black;
+    padding: 5rem;
+    border-radius: 50px;
+}
+
+#visOrdre li{
+    font-weight: 300;
+    font-family: 'GT America Regular', sans-serif;
+    font-size: 3rem;
+}
+
+#ordreBekræftStorage{
+    padding-top: 20rem;
+    padding-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ordreBekræftStorage h3{
+    font-size: 6rem;
+    padding-bottom: 5rem;
+}
+
+#ordreBekræftStorage p{
+    font-size: 3rem;
+}
+
+#bekræftOrdre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bekræftOrdre h2{
+    font-size: 6.5rem;
+    padding-bottom: 6rem;
+}
+
+.bkrftButtons{
+    display: flex;
+    gap: 40px;
+}
+
+#helpMe h4{
+    font-size: 3.5rem;
+    padding-bottom: 6rem;
+    color: rgb(158, 158, 158);
+}
+
+@keyframes hop {
+    0% {
+        transform: translateY(0rem);
+    }
+    100% {
+        transform: translateY(3rem)
+    }
+}
+
+#helpMe h2{
+    font-size: 7rem;
+    animation: hop 0.7s ease-out 0s alternate infinite none running;
+}
+
+#helpMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+#helpmeBtn{
+    font-size: 2.5rem;
+    text-decoration: none;
+    border: 6px solid rgb(158, 158, 158);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    border-radius: 175px;
+    color: rgb(158, 158, 158);
+}
+
+/* Betalingsmetode.html */
+#ordrePayment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 35vh;
+}
+
+#ordrePayment h2{
+    font-size: 5.5rem;
+    padding-bottom: 9rem;
+}
+
+#smallbutton{
+    font-size: 3.5rem;
+    text-decoration: none;
+    background-color: var(--blue);
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border-radius: 175px;
+    color: white;
+}
+
+#smallbuttonOutline{
+    font-size: 3.5rem;
+    text-decoration: none;
+    background-color: none;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    border: 2px solid black;
+    border-radius: 175px;
+    color: black;
+}
+
+/* betalingsexplainer.html */
+#ordrePaymentExplainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 39vh;
+    text-align: center;
+}
+
+#ordrePaymentExplainer h2{
+    font-size: 5.5rem;
+    padding-bottom: 9rem;
+}
+
+#popup{
+    font-family: 'Zona Pro', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 35vh;
+    position: fixed;
+    width: 1700px;
+    height: 200px;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    display: none;
+}
+
+#popupbox{
+    background-color: rgb(236, 236, 236);
+    border: 5px solid black;
+    padding: 10rem;
+    border-radius: 30px;
+}
+
+/* ordredone.html - ordrebekræftelse */
+#ordrebekræft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30vh;
+    text-align: center;
+}
+
+#ordrebekræft h2{
+    font-size: 7.5rem;
+    padding-bottom: 1rem;
+    color: var(--darkblue);
+}
+
+#ordrebekræft p{
+    font-family: 'GT America Regular', sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    font-size: 4rem;
+    text-align: center;
+    padding: 0rem 10rem 0rem 10rem;
+    color: var(--darkblue);
+    opacity: 70%;
+}
+
+#ordrebekræft strong{
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+#ordrenr{
+    display: flex;
+    padding-top: 10rem;
+    justify-content: center;
+    font-size: 4rem;
+    color: #3F3D56;
+    opacity: 30%;
+}
+
+
+

@@ -1,0 +1,172 @@
+{
+  "Ark1": [
+    {
+      "id": 1,
+      "titel": "Tatar af kalv",
+      "beskrivelse": "Lækker australsk wagyu med årstidens urter",
+      "pris": 110,
+      "ret": "forret",
+      "foto": "tatar.png"
+    },
+    {
+      "id": 2,
+      "titel": "Kammusling Ceviche",
+      "beskrivelse": "Med chili, agurk, æble, frisk lime, ørredrogn, aromatisk koriander.",
+      "pris": 120,
+      "ret": "forret",
+      "foto": "ceviche.png"
+    },
+    {
+      "id": 3,
+      "titel": "Bruscetta",
+      "beskrivelse": "Bruscetta med hjemmebagt brød, san marzano tomater og hjemmedyrket hvidløg.",
+      "pris": 80,
+      "ret": "forret",
+      "foto": "bruscetta.png"
+    },
+    {
+      "id": 4,
+      "titel": "Grillet Carpaccio",
+      "beskrivelse": "Grillet italiensk carpaccio, drysset med parmesan, citron, peber og lækker olivenolie.",
+      "pris": 110,
+      "ret": "forret",
+      "foto": "carpaccio.png"
+    },
+    {
+      "id": 5,
+      "titel": "Pandestegt Helleflynder",
+      "beskrivelse": "Norsk helleflynder, asiatisk inspireret sauce, syltede bøgehatte, broccolini, sprøde chips.",
+      "pris": 150,
+      "ret": "hovedret",
+      "foto": "helleflynder.png"
+    },
+    {
+      "id": 6,
+      "titel": "Bøf Wellington",
+      "beskrivelse": "Oksemørbrad, dijonsennep, duxelles af svampe, parmaskinke, butterdej.",
+      "pris": 200,
+      "ret": "hovedret",
+      "foto": "wellington.png"
+    },
+    {
+      "id": 7,
+      "titel": "Pasta Carbonara",
+      "beskrivelse": "Lavet af frisk pasta, hjemmedyrkede æg og guanciale samt masser af frisk peber.",
+      "pris": 100,
+      "ret": "hovedret",
+      "foto": "carbonara.png"
+    },
+    {
+      "id": 8,
+      "titel": "Boef Stroganoff",
+      "beskrivelse": "Okseinderlår, vilde svampe, skalotteløg, dansk bacon og masser af fløde.",
+      "pris": 120,
+      "ret": "hovedret",
+      "foto": "stroganoff.png"
+    },
+    {
+      "id": 9,
+      "titel": "Saltkaramel Creme Brulée",
+      "beskrivelse": "Klassisk creme brulée, saltkaramel, friske bær.",
+      "pris": 80,
+      "ret": "dessert",
+      "foto": "brulée.png"
+    },
+    {
+      "id": 10,
+      "titel": "Havtorn Is",
+      "beskrivelse": "Havtorn Is, hjemmelavet havtorn marmelade, vaffel.",
+      "pris": 80,
+      "ret": "dessert",
+      "foto": "is.png"
+    },
+    {
+      "id": 11,
+      "titel": "Rabarber Sorbet",
+      "beskrivelse": "Sorbet af hjemmedyrkede rabarber. Serveres med en sprød karamelknas.",
+      "pris": 70,
+      "ret": "dessert",
+      "foto": "sorbet.png"
+    },
+    {
+      "id": 12,
+      "titel": "Osteplatte",
+      "beskrivelse": "En platte af lækker ost fra Frankrig, Italien og Holland. Serveres med hjemmelavede kiks og marmelade.",
+      "pris": 110,
+      "ret": "dessert",
+      "foto": "oste.png"
+    },
+    {
+      "id": 13,
+      "titel": "Kroketter",
+      "beskrivelse": "Svinebryst, brunet smørmayo, Gammel Knas.",
+      "pris": 50,
+      "ret": "tilbehør",
+      "foto": "kroketter.png"
+    },
+    {
+      "id": 14,
+      "titel": "Foccasia",
+      "beskrivelse": "Hjemmebagt foccasia med oliven og havssalt.",
+      "pris": 40,
+      "ret": "tilbehør",
+      "foto": "foccasia.png"
+    },
+    {
+      "id": 15,
+      "titel": "Flute",
+      "beskrivelse": "Hjemmebagt flute. Serveres med valgfri dyppelse.",
+      "pris": 40,
+      "ret": "tilbehør",
+      "foto": "flute.png"
+    },
+    {
+      "id": 16,
+      "titel": "Trøffel Fries",
+      "beskrivelse": "Frisk estragon, havsalt, friskrevel trøffel, bernaisemayo. Serveres med valgfri dyppelse.",
+      "pris": 50,
+      "ret": "tilbehør",
+      "foto": "fries.png"
+    },
+    {
+      "id": 17,
+      "titel": "Orangevin",
+      "beskrivelse": "Et glas lækker naturlig orangevin fra Frankrig.",
+      "pris": 80,
+      "ret": "drikkevare",
+      "foto": "orangevin.png"
+    },
+    {
+      "id": 18,
+      "titel": "Husets Rødvin",
+      "beskrivelse": "Et glas af husets rødvin. Biodynamisk, rund og dejlig.",
+      "pris": 80,
+      "ret": "drikkevare",
+      "foto": "rodvin.png"
+    },
+    {
+      "id": 19,
+      "titel": "Husets Hvidvin",
+      "beskrivelse": "Et glas af husets hvidvin. Lavet med kærlighed i Frankrig. Frisk, frugtig og lækker.",
+      "pris": 80,
+      "ret": "drikkevare",
+      "foto": "hvidvin.png"
+    },
+    {
+      "id": 20,
+      "titel": "Økologisk Ørbæk Cola",
+      "beskrivelse": "En forfriskende krydret cola. Der er tilsat bygmalt for at opnå en flot mørkgylden farve og afrundet smag.",
+      "pris": 25,
+      "ret": "drikkevare",
+      "foto": "cola.png"
+    },
+    {
+      "id": 21,
+      "titel": "Økologisk Ørbæk Rabarberbrus",
+      "beskrivelse": "Naturfrisk økologisk Rabarberbrus. Intet siger sommer og sol som rabarber. ",
+      "pris": 25,
+      "ret": "drikkevare",
+      "foto": "rabarberbrus.png"
+    }
+  ]
+}

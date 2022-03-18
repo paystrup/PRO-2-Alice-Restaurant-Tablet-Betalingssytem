@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alices Restaurant - Indsæt kort eller betal</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/63f60264a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section id="ordreBekræftContainer">
+        <div class="progbar" data-aos="fade-up" data-aos-delay="200">
+            <img src="media/prog-3.svg" alt="Prog Bar Top - Blå">
+        </div>
+
+        <div id="ordrePaymentExplainer">
+            <h2 data-aos="fade-up">Indsæt dit kort eller 
+                <br>betal kontant i automaten 💳</h2>
+        </div>
+
+        <div id="helpMe" data-aos="fade-up" data-aos-delay="700">
+            <h4>Har du glemt noget i din ordre?</h4>
+            <a href="betalingsside.html" id="helpmeBtn">Gå tilbage til min ordre</a>
+        </div>
+    </section>
+
+    <div id="popup">
+        <div id="popupbox">
+            <h5>Vises ikke i færdig version af prototypen</h5>
+            <h5>Dit 'kort' er accepteret</h5>
+            <a href="ordredone.html">Gå videre til ordrebekræftelse</a>
+        </div>
+   
+    </div>
+
+
+    <!-- LINK TIL JS EKSTERNT I /js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/kort.js"></script>
+</body>
+</html>

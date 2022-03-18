@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alices Restaurant - Betalingsside</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/63f60264a7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section id="ordreBekræftContainer">
+        <div class="progbar" data-aos="fade-up" data-aos-delay="500">
+            <img src="media/prog-1.svg" alt="Prog Bar Top - Blå">
+        </div>
+
+        <div id="ordreBekræftStorage" data-aos="fade-up">
+            <h3>Min ordre</h3>
+            <div id="visOrdre" class="ordreBorder">
+            </div>
+        
+        </div>
+
+        <div id="bekræftOrdre" data-aos="fade-up" data-aos-delay="200">
+            <h2>Er din ordre korrekt?</h2>
+            <div class="bkrftButtons">
+                <a href="betalingsmetode.html" id="blue-button">Bekræft</a>
+                <a href="bestilling.html" id="third-button">Gå tilbage</a>
+            </div>
+           
+        </div>
+
+        <div id="helpMe" data-aos="fade-up" data-aos-delay="700">
+            <h4>Har du brug for hjælp?</h4>
+            <a href="#" id="helpmeBtn">Kontakt personale</a>
+        </div>
+    </section>
+
+
+    <!-- LINK TIL JS EKSTERNT I /js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/betalingsside.js"></script>
+    
+</body>
+</html>

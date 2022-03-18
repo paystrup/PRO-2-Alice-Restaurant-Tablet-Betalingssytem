@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alices Restaurant - Bestillingsside</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/63f60264a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    
+    <section id="bestillingBox">
+        <aside id="bestil-sidebar">
+            <div id="menuSprog" data-aos="fade-down" data-aos-delay="500">
+                <h4>Select language</h4>
+            </div>
+            
+            <div id="menuBordID" data-aos="fade-up" data-aos-delay="100">
+                <!-- HER INDSÆTTES BORDETS NR VIA js/js.js og bornr.json -->
+            </div>
+
+            <div id="menuSamlet" data-aos="fade-up" data-aos-delay="100">
+                <div id="menuForretter" class="menu-item">
+                    <p>Forretter</p>
+                    <i class="fa-solid fa-bowl-hot"></i>
+                    <img src="media/forretter.svg" alt="Forretter Ikon">
+                </div>
+    
+                <div id="menuHovedretter" class="menu-item">
+                    <p>Hovedretter</p>
+                    <img src="media/hovedretter.svg" alt="Hovedretter Ikon">
+                </div>
+    
+                <div id="menuDesserter" class="menu-item">
+                    <p>Desserter</p>
+                    <img src="media/desserter.svg" alt="Dessert Ikon">
+                </div>
+    
+                <div id="menuTilbehor" class="menu-item">
+                    <p>Tilbehør</p>
+                    <img src="media/tilbehr.svg" alt="Tilbehør Ikon">
+                </div>
+    
+                <div id="menuDrikkevarer" class="menu-item">
+                    <p>Drikkevarer</p>
+                    <img src="media/drikkevarer.svg" alt="Drikkevarer Ikon">
+                </div>
+            </div>
+
+            <div id="orders" data-aos="fade-up" data-aos-delay="400">
+                <h2>Din ordre</h2>
+                <hr>
+                <table id="ordersList"></table>
+      
+                <div id="bill">
+                  <div class="price">Pris i alt: &nbsp;</div>
+                  <div id="sum"></div>
+                </div>
+            </div>
+
+        </aside>
+
+        <div id="produkterWrap">
+            <div id="produkterHeader" data-aos="fade-up"></div>
+            <div id="produkter" data-aos="fade-up" data-aos-delay="200"></div>
+        </div>
+
+    </section>
+
+    <section id="bestil-cta">
+        <a href="betalingsside.html" id="gemOrdreKnap" class="main-button">Betal nu</a>
+        <a href="index.html" id="second-button">Gå tilbage</a>
+    </section>
+    
+
+
+    <!-- LINK TIL JS EKSTERNT I /js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/js.js"></script>
+</body>
+</html>
