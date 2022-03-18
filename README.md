@@ -24,4 +24,4 @@
 - Evt. supplere valgfrit JavaScript library(-ies).
 
 > Live prototype
-** https://www.tabletalicesrestaurant.paystrup.dk/bestilling.html **
+** https://www.tabletalicesrestaurant.paystrup.dk **
