@@ -22,3 +22,6 @@
 - JSON-data fra en valgfri API integreres i designet (f.eks. Mapbox, Open Data, OpenWeatherMap etc.) 
 - Tekster, der vises på dansk og engelsk skal laves ved hjælp af enten variabler eller objekter.
 - Evt. supplere valgfrit JavaScript library(-ies).
+
+> Live prototype
+** https://www.tabletalicesrestaurant.paystrup.dk/bestilling.html **
